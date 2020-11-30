@@ -1,4 +1,10 @@
+/*Variables*/
+$font-one: 'Lato', sans-serif;
+$font-two: 'Yellowtail', cursive;
+
 $color-one: rgb(223, 190, 5);
+
+/*Global*/
 
 body {
     margin: 0px;
@@ -7,7 +13,7 @@ body {
     color: #000;
     font-size: 16px;
     line-height: 1.7;
-    
+    font-family: $font-one;
 }
 
 .section {
@@ -21,9 +27,13 @@ body {
     padding: 0px 20px;
 }
 
+h3 {
+
+}
 /*Header*/
 
 .top {
+    position: relative;
     height: 80vh;
     background-position: center center;
     background-image: url('https://images.pexels.com/photos/2330137/pexels-photo-2330137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
@@ -41,21 +51,52 @@ nav .container {
 
  .navbar-brand{
      color: $color-one;
+     font-family: $font-two;
+     font-size: 24px;
+ }
+
+ .navbar-brand:hover {
+    color: $color-one;
+ }
+
+ .navbar-collapse a{
+     color: #fff;
+     font-size: 14px;
  }
 
 .splash {
+    position: absolute;
     padding-top: 40px;
     text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 
 .splash .subtitle, .title {
     color: #fff;
 }
 
+.splash .title {
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 36px;
+}
+
+.splash .subtitle {
+    font-size: 3rem;
+    font-family: $font-two;
+}
+
 .btn-primary {
     color: #fff;
     background-color: $color-one;
     border-color: $color-one;
+    font-weight: bold;
+    line-height: 4;
+    width: 250px;
 }
 
 /*services*/

@@ -1,3 +1,5 @@
+/*Variables*/
+/*Global*/
 body {
   margin: 0px;
   text-align: none;
@@ -5,6 +7,7 @@ body {
   color: #000;
   font-size: 16px;
   line-height: 1.7;
+  font-family: "Lato", sans-serif;
 }
 
 .section {
@@ -20,6 +23,7 @@ body {
 
 /*Header*/
 .top {
+  position: relative;
   height: 80vh;
   background-position: center center;
   background-image: url("https://images.pexels.com/photos/2330137/pexels-photo-2330137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -37,21 +41,51 @@ nav .container {
 
 .navbar-brand {
   color: #dfbe05;
+  font-family: "Yellowtail", cursive;
+  font-size: 24px;
+}
+
+.navbar-brand:hover {
+  color: #dfbe05;
+}
+
+.navbar-collapse a {
+  color: #fff;
+  font-size: 14px;
 }
 
 .splash {
+  position: absolute;
   padding-top: 40px;
   text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .splash .subtitle, .title {
   color: #fff;
 }
 
+.splash .title {
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 36px;
+}
+
+.splash .subtitle {
+  font-size: 3rem;
+  font-family: "Yellowtail", cursive;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #dfbe05;
   border-color: #dfbe05;
+  font-weight: bold;
+  line-height: 4;
+  width: 250px;
 }
 
 /*services*/
