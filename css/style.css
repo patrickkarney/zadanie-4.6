@@ -2,15 +2,20 @@ body {
   margin: 0px;
   text-align: none;
   background: #fff;
-  color: #7C7C7C;
+  color: #000;
   font-size: 16px;
   line-height: 1.7;
+}
+
+.section {
+  padding: 96px 0px;
+  margin: 0 36px;
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 96px 20px;
+  padding: 0px 20px;
 }
 
 /*Header*/
@@ -26,12 +31,16 @@ nav .container {
 }
 
 .navbar {
-  background-color: rgba(184, 229, 250, 0.062) !important;
+  background-color: rgba(184, 229, 250, 0) !important;
   border: none !important;
 }
 
 .splash {
   padding-top: 40px;
   text-align: center;
+}
+
+.splash .subtitle, .title {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
